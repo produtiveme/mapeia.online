@@ -32,7 +32,7 @@ function Header({ activePath }: { activePath: string }) {
         </nav>
 
         <Link className="button button-primary button-small" href="/aplicacao">
-          Preencher aplicacao
+          Preencher aplicação
         </Link>
       </div>
     </header>
@@ -50,12 +50,12 @@ function Footer() {
           </div>
           <p className="footer-copy">
             Consultoria de processos para transformar conhecimento disperso em
-            padroes claros, replicaveis e prontos para escalar.
+            padrões claros, replicáveis e prontos para escalar.
           </p>
         </div>
 
         <div className="footer-column">
-          <p className="footer-title">Navegacao</p>
+          <p className="footer-title">Navegação</p>
           {navItems.map((item) => (
             <Link key={item.href} className="footer-link" href={item.href}>
               {item.label}
@@ -69,7 +69,7 @@ function Footer() {
             GitHub
           </a>
           <Link className="footer-link" href="/aplicacao">
-            Aplicacao
+            Aplicação
           </Link>
         </div>
       </div>

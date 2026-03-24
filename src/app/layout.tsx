@@ -15,7 +15,7 @@ const publicSans = Public_Sans({
 export const metadata: Metadata = {
   title: "Mapeia.Online | Consultoria de Processos",
   description:
-    "Consultoria de processos online para diagnosticar gargalos, reduzir dependencia de pessoas-chave e padronizar a operacao.",
+    "Consultoria de processos online para diagnosticar gargalos, reduzir dependência de pessoas-chave e padronizar a operação.",
 };
 
 export default function RootLayout({

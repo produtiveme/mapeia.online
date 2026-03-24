@@ -14,10 +14,10 @@ export default function SobrePage() {
               em fluidez editorial.
             </h1>
             <p className="hero-text">
-              A Mapeia.Online nasceu como a empresa irma do ProdutiveMe para
-              focar em consultoria de processos. Nosso papel e transformar
-              conhecimento tacito, gargalos e improvisos em uma estrutura clara,
-              replicavel e pronta para sustentar crescimento.
+              A Mapeia.Online nasceu como a empresa irmã do ProdutiveMe para
+              focar em consultoria de processos. Nosso papel é transformar
+              conhecimento tácito, gargalos e improvisos em uma estrutura clara,
+              replicável e pronta para sustentar crescimento.
             </p>
             <p className="supporting-note">
               Process mapping and standardization specialists
@@ -38,11 +38,11 @@ export default function SobrePage() {
         <div className="shell">
           <div className="section-heading split">
             <div>
-              <span className="eyebrow">Principios</span>
+              <span className="eyebrow">Princípios</span>
               <h2>Nossa forma de trabalhar</h2>
             </div>
             <p>
-              O objetivo nao e fazer documentacao bonita. E construir clareza
+              O objetivo não é fazer documentação bonita. É construir clareza
               operacional que o time realmente consiga usar.
             </p>
           </div>
@@ -63,14 +63,14 @@ export default function SobrePage() {
           <div className="cta-band">
             <div>
               <span className="eyebrow eyebrow-light">Pronto para estruturar</span>
-              <h2>Se o processo esta travado, a operacao sente primeiro.</h2>
+              <h2>Se o processo está travado, a operação sente primeiro.</h2>
             </div>
             <div className="button-row">
               <Link className="button button-light" href="/aplicacao">
-                Preencher aplicacao
+                Preencher aplicação
               </Link>
               <Link className="button button-secondary-light" href="/servicos">
-                Falar com o servico ideal
+                Falar com o serviço ideal
               </Link>
             </div>
           </div>

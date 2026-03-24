@@ -8,10 +8,10 @@ export default function ServicosPage() {
       <section className="section page-intro">
         <div className="shell page-intro-grid">
           <div>
-            <span className="eyebrow">Nossas solucoes</span>
-            <h1>Servicos</h1>
+            <span className="eyebrow">Nossas soluções</span>
+            <h1>Serviços</h1>
             <p className="lead">
-              Duas opcoes para comecar. A aplicacao inicial nos ajuda a indicar
+              Duas opções para começar. A aplicação inicial nos ajuda a indicar
               qual formato faz mais sentido para o seu momento.
             </p>
           </div>
@@ -57,7 +57,7 @@ export default function ServicosPage() {
               </div>
 
               <Link className="button button-primary button-block" href="/aplicacao">
-                Preencher aplicacao
+                Preencher aplicação
               </Link>
             </article>
           ))}
@@ -67,8 +67,8 @@ export default function ServicosPage() {
       <section className="section">
         <div className="shell">
           <div className="info-strip">
-            A aplicacao funciona como um filtro inicial: entendemos seu cenario e
-            indicamos o plano mais adequado antes de avancar.
+            A aplicação funciona como um filtro inicial: entendemos seu cenário e
+            indicamos o plano mais adequado antes de avançar.
           </div>
         </div>
       </section>

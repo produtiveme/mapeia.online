@@ -24,7 +24,7 @@ export function ApplicationForm() {
             <span>Empresa</span>
             <input
               name="company"
-              placeholder="Nome da sua organizacao"
+              placeholder="Nome da sua organização"
               type="text"
             />
           </label>
@@ -41,12 +41,12 @@ export function ApplicationForm() {
             <input name="phone" placeholder="(00) 00000-0000" type="tel" />
           </label>
           <label className="field field-full">
-            <span>Numero de funcionarios</span>
-            <select name="team-size" defaultValue="51 - 200 funcionarios">
-              <option>1 - 10 funcionarios</option>
-              <option>11 - 50 funcionarios</option>
-              <option>51 - 200 funcionarios</option>
-              <option>200+ funcionarios</option>
+            <span>Número de funcionários</span>
+            <select name="team-size" defaultValue="51 - 200 funcionários">
+              <option>1 - 10 funcionários</option>
+              <option>11 - 50 funcionários</option>
+              <option>51 - 200 funcionários</option>
+              <option>200+ funcionários</option>
             </select>
           </label>
         </div>
@@ -55,7 +55,7 @@ export function ApplicationForm() {
 
         <div className="application-stack">
           <label className="field">
-            <span>Area ou processo que deseja mapear</span>
+            <span>Área ou processo que deseja mapear</span>
             <input
               name="process"
               placeholder="Ex: onboarding de clientes, vendas, financeiro"
@@ -67,9 +67,9 @@ export function ApplicationForm() {
             <legend>Principal objetivo</legend>
             <div className="choice-grid">
               {[
-                "Reduzir dependencia",
+                "Reduzir dependência",
                 "Padronizar processos",
-                "Escalar operacao",
+                "Escalar operação",
                 "Eliminar retrabalho",
               ].map((option) => (
                 <label key={option} className="choice-card">
@@ -90,9 +90,9 @@ export function ApplicationForm() {
           </label>
 
           <fieldset className="field">
-            <legend>Urgencia para implementacao</legend>
+            <legend>Urgência para implementação</legend>
             <div className="choice-grid choice-grid-three">
-              {["Imediata", "Proximos 30 dias", "Apenas sondando"].map(
+              {["Imediata", "Próximos 30 dias", "Apenas sondando"].map(
                 (option) => (
                   <label key={option} className="choice-card">
                     <input name="urgency" type="radio" value={option} />
@@ -105,15 +105,15 @@ export function ApplicationForm() {
         </div>
 
         <button className="button button-primary button-block" type="submit">
-          Enviar aplicacao
+          Enviar aplicação
         </button>
       </form>
 
       {formState === "success" ? (
         <div className="success-banner" role="status">
-          <strong>Aplicacao recebida.</strong> Como o formulario esta em modo
-          estatico neste momento, a proxima etapa e conectar esse layout ao
-          destino final quando voce quiser.
+          <strong>Aplicação recebida.</strong> Como o formulário está em modo
+          estático neste momento, a próxima etapa é conectar esse layout ao
+          destino final quando você quiser.
         </div>
       ) : null}
     </div>

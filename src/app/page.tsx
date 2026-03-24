@@ -16,20 +16,20 @@ export default function Home() {
           <div className="hero-copy">
             <span className="eyebrow">Consultoria de processos online</span>
             <h1>
-              Tire o processo da cabeca das pessoas.{" "}
+              Tire o processo da cabeça das pessoas.{" "}
               <span className="gradient-text">Padronize para escalar.</span>
             </h1>
             <p className="hero-text">
               A Mapeia.Online ajuda empresas em crescimento a enxergar o
-              processo real, reduzir dependencia de pessoas-chave e transformar
-              conhecimento disperso em padroes claros.
+              processo real, reduzir dependência de pessoas-chave e transformar
+              conhecimento disperso em padrões claros.
             </p>
             <div className="button-row">
               <Link className="button button-primary" href="/aplicacao">
-                Preencher aplicacao
+                Preencher aplicação
               </Link>
               <Link className="button button-secondary" href="/servicos">
-                Ver servicos
+                Ver serviços
               </Link>
             </div>
           </div>
@@ -49,23 +49,23 @@ export default function Home() {
         <div className="shell">
           <div className="section-heading">
             <span className="eyebrow">O problema</span>
-            <h2>O custo da falta de padrao</h2>
+            <h2>O custo da falta de padrão</h2>
             <p>
-              Processos invisiveis criam vulnerabilidades silenciosas dentro da
-              operacao.
+              Processos invisíveis criam vulnerabilidades silenciosas dentro da
+              operação.
             </p>
           </div>
 
           <div className="card-grid three-cols">
             <article className="feature-card">
-              <strong>Dependencia de pessoas-chave</strong>
+              <strong>Dependência de pessoas-chave</strong>
               <p>
-                Quando o conhecimento mora em poucas pessoas, qualquer ausencia
+                Quando o conhecimento mora em poucas pessoas, qualquer ausência
                 vira risco operacional.
               </p>
             </article>
             <article className="feature-card">
-              <strong>Retrabalho e variacoes</strong>
+              <strong>Retrabalho e variações</strong>
               <p>
                 Cada pessoa executa de um jeito, a qualidade oscila e o processo
                 fica mais caro do que deveria.
@@ -74,7 +74,7 @@ export default function Home() {
             <article className="feature-card">
               <strong>Crescimento vira caos</strong>
               <p>
-                Sem padroes claros, contratar e expandir aumenta a complexidade
+                Sem padrões claros, contratar e expandir aumenta a complexidade
                 em vez da capacidade.
               </p>
             </article>
@@ -85,7 +85,7 @@ export default function Home() {
       <section className="section">
         <div className="shell">
           <div className="section-heading center">
-            <span className="eyebrow">Entregaveis</span>
+            <span className="eyebrow">Entregáveis</span>
             <h2>O que entregamos</h2>
           </div>
 
@@ -104,8 +104,8 @@ export default function Home() {
         <div className="shell">
           <div className="section-heading split">
             <div>
-              <span className="eyebrow">Metodo</span>
-              <h2>Jornada de transformacao</h2>
+              <span className="eyebrow">Método</span>
+              <h2>Jornada de transformação</h2>
             </div>
             <p>Um fluxo direto, com escopo claro e entregas objetivas.</p>
           </div>
@@ -136,10 +136,10 @@ export default function Home() {
 
           <div className="panel panel-emphasis">
             <span className="eyebrow">Escopo base</span>
-            <h2>Consultoria previsivel, sem escopo infinito</h2>
+            <h2>Consultoria previsível, sem escopo infinito</h2>
             <p>
               O formato inicial da Mapeia.Online foca em um processo por vez,
-              com diagnostico AS-IS, gargalos priorizados, POPs essenciais e
+              com diagnóstico AS-IS, gargalos priorizados, POPs essenciais e
               backlog de melhorias.
             </p>
             <Link className="button button-primary" href="/servicos">
@@ -175,7 +175,7 @@ export default function Home() {
                   ))}
                 </ul>
                 <Link className="button button-primary button-block" href="/aplicacao">
-                  Aplicacao
+                  Aplicação
                 </Link>
               </article>
             ))}
@@ -187,7 +187,7 @@ export default function Home() {
         <div className="shell narrow-shell">
           <div className="section-heading center">
             <span className="eyebrow">Perguntas frequentes</span>
-            <h2>Duvidas comuns antes de comecar</h2>
+            <h2>Dúvidas comuns antes de começar</h2>
           </div>
 
           <div className="faq-list">
@@ -205,11 +205,11 @@ export default function Home() {
         <div className="shell">
           <div className="cta-band">
             <div>
-              <span className="eyebrow eyebrow-light">Proximo passo</span>
-              <h2>Quer organizar um processo critico e reduzir dependencia?</h2>
+              <span className="eyebrow eyebrow-light">Próximo passo</span>
+              <h2>Quer organizar um processo crítico e reduzir dependência?</h2>
             </div>
             <Link className="button button-light" href="/aplicacao">
-              Preencher aplicacao agora
+              Preencher aplicação agora
             </Link>
           </div>
         </div>
