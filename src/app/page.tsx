@@ -1,66 +1,219 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Link from "next/link";
+import { SiteShell } from "@/components/site-shell";
+import {
+  deliverables,
+  faqs,
+  plans,
+  processSteps,
+  targetAudience,
+} from "@/lib/content";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <SiteShell activePath="/">
+      <section className="hero-section section">
+        <div className="shell hero-grid">
+          <div className="hero-copy">
+            <span className="eyebrow">Consultoria de processos online</span>
+            <h1>
+              Tire o processo da cabeca das pessoas.{" "}
+              <span className="gradient-text">Padronize para escalar.</span>
+            </h1>
+            <p className="hero-text">
+              A Mapeia.Online ajuda empresas em crescimento a enxergar o
+              processo real, reduzir dependencia de pessoas-chave e transformar
+              conhecimento disperso em padroes claros.
+            </p>
+            <div className="button-row">
+              <Link className="button button-primary" href="/aplicacao">
+                Preencher aplicacao
+              </Link>
+              <Link className="button button-secondary" href="/servicos">
+                Ver servicos
+              </Link>
+            </div>
+          </div>
+
+          <div className="hero-art" aria-hidden="true">
+            <div className="hero-card">
+              <div className="crystal crystal-large" />
+              <div className="crystal crystal-small" />
+              <div className="hero-glow hero-glow-blue" />
+              <div className="hero-glow hero-glow-pink" />
+            </div>
+          </div>
         </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      <section className="section surface-alt">
+        <div className="shell">
+          <div className="section-heading">
+            <span className="eyebrow">O problema</span>
+            <h2>O custo da falta de padrao</h2>
+            <p>
+              Processos invisiveis criam vulnerabilidades silenciosas dentro da
+              operacao.
+            </p>
+          </div>
+
+          <div className="card-grid three-cols">
+            <article className="feature-card">
+              <strong>Dependencia de pessoas-chave</strong>
+              <p>
+                Quando o conhecimento mora em poucas pessoas, qualquer ausencia
+                vira risco operacional.
+              </p>
+            </article>
+            <article className="feature-card">
+              <strong>Retrabalho e variacoes</strong>
+              <p>
+                Cada pessoa executa de um jeito, a qualidade oscila e o processo
+                fica mais caro do que deveria.
+              </p>
+            </article>
+            <article className="feature-card">
+              <strong>Crescimento vira caos</strong>
+              <p>
+                Sem padroes claros, contratar e expandir aumenta a complexidade
+                em vez da capacidade.
+              </p>
+            </article>
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      <section className="section">
+        <div className="shell">
+          <div className="section-heading center">
+            <span className="eyebrow">Entregaveis</span>
+            <h2>O que entregamos</h2>
+          </div>
+
+          <div className="card-grid three-cols">
+            {deliverables.map((item) => (
+              <article key={item} className="deliverable-card">
+                <span className="dot-accent" />
+                <p>{item}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section surface-strong">
+        <div className="shell">
+          <div className="section-heading split">
+            <div>
+              <span className="eyebrow">Metodo</span>
+              <h2>Jornada de transformacao</h2>
+            </div>
+            <p>Um fluxo direto, com escopo claro e entregas objetivas.</p>
+          </div>
+
+          <div className="step-grid">
+            {processSteps.map((step) => (
+              <article key={step.index} className="step-card">
+                <span className="step-number">{step.index}</span>
+                <h3>{step.title}</h3>
+                <p>{step.text}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="shell two-column-panel">
+          <div className="panel">
+            <span className="eyebrow">Para quem</span>
+            <h2>Perfil ideal de cliente</h2>
+            <ul className="list-clean">
+              {targetAudience.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="panel panel-emphasis">
+            <span className="eyebrow">Escopo base</span>
+            <h2>Consultoria previsivel, sem escopo infinito</h2>
+            <p>
+              O formato inicial da Mapeia.Online foca em um processo por vez,
+              com diagnostico AS-IS, gargalos priorizados, POPs essenciais e
+              backlog de melhorias.
+            </p>
+            <Link className="button button-primary" href="/servicos">
+              Conhecer os planos
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="shell">
+          <div className="section-heading center">
+            <span className="eyebrow">Planos</span>
+            <h2>Como podemos atuar</h2>
+          </div>
+
+          <div className="plan-grid">
+            {plans.map((plan, index) => (
+              <article
+                key={plan.name}
+                className={index === 1 ? "plan-card plan-card-featured" : "plan-card"}
+              >
+                <span className="plan-badge">{plan.badge}</span>
+                <h3>{plan.name}</h3>
+                <p className="plan-description">{plan.description}</p>
+                <div className="price-box">
+                  <strong>{plan.priceCash}</strong>
+                  <span>{plan.priceInstallments}</span>
+                </div>
+                <ul className="list-clean compact">
+                  {plan.items.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+                <Link className="button button-primary button-block" href="/aplicacao">
+                  Aplicacao
+                </Link>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="shell narrow-shell">
+          <div className="section-heading center">
+            <span className="eyebrow">Perguntas frequentes</span>
+            <h2>Duvidas comuns antes de comecar</h2>
+          </div>
+
+          <div className="faq-list">
+            {faqs.map((faq) => (
+              <article key={faq.question} className="faq-card">
+                <h3>{faq.question}</h3>
+                <p>{faq.answer}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="shell">
+          <div className="cta-band">
+            <div>
+              <span className="eyebrow eyebrow-light">Proximo passo</span>
+              <h2>Quer organizar um processo critico e reduzir dependencia?</h2>
+            </div>
+            <Link className="button button-light" href="/aplicacao">
+              Preencher aplicacao agora
+            </Link>
+          </div>
+        </div>
+      </section>
+    </SiteShell>
   );
 }
